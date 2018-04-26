@@ -15,13 +15,17 @@ form {
   margin: 0 auto;
   width: 50%;
   padding: 1em;
-  padding-top: 0;
   color: #7F7F7F;
 }
 
-label {
-  margin: 5px;
+fieldset {
+  border: none;
 }
+
+label {
+  margin: 10px;
+}
+
 
 textarea, input {
   outline: none;
@@ -43,10 +47,6 @@ input[type=text]:focus, textarea:focus {
   border: 2px solid #344152;
 }
 
-input[type=text] {
-  border-radius: 1px;
-}
-
 .header {
   display: flex;
   flex-direction: column;
@@ -59,13 +59,10 @@ input[type=text] {
 
 .header p {
   font-size: 16px;
-  width: 50%;
+  width: auto;
   text-align: center;
-  margin-bottom: 50px;
   color: #7F7F7F;
-  margin-top: 0;
-  margin-bottom: 3px;
-  padding-bottom: 35px;
+  padding-bottom: 20px;
 }
 
 .header h1 {
@@ -74,20 +71,17 @@ input[type=text] {
   margin-top: 0;
 }
 
-.info h3 {
-  margin-top: 2px;
-  padding-top: 35px;
+.info legend {
+  padding-top: 50px;
+  padding-bottom: 40px;
+  font-weight: bold;
+  padding-left: 7px;
+  color: black;
+  width: auto;
 }
 
-.html,
-.css,
-.java {
-  margin: 7px;
-}
-
-.html_news,
-.plaintext {
-  margin: 7px;
+.info input {
+  width: 100%;
 }
 
 .name,
@@ -95,24 +89,43 @@ input[type=text] {
 .phone,
 .street,
 .city,
-.state {
-  background-color: #F5F5F5;
-  border: none;
-  padding: 15px;
-}
-
+.state,
 .zip {
   background-color: #F5F5F5;
   border: none;
   padding: 15px;
-  width: 110px;
+  margin: 10px;
+}
+
+.newsletter {
+  margin-top: 50px;
+  border-top: 2px solid black;
+  width: 60%;
+  padding-top: 75px;
+}
+
+.html,
+.css,
+.java {
+  margin-top: 20px;
+}
+
+.html_news,
+.plaintext {
+  margin-top: 20px;
 }
 
 .area {
-  margin-top: 5px;
-  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.text {
   background-color: #F5F5F5;
   border: none;
+  padding: 40px;
+  margin-top: 15px;
 }
 
 .button {
@@ -126,9 +139,22 @@ input[type=text] {
 }
 
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   ::-webkit-input-placeholder {
     font-style: italic;
     padding-left: 600px;
+  }
+  .info {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .info label {
+    width: 20%;
+
+  }
+
+  .info input {
+    width: 70%;
   }
 }
