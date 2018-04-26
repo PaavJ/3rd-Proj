@@ -4,6 +4,23 @@ html, body {
   font-family: 'Exo', sans-serif;
 }
 
+::-webkit-input-placeholder {
+  font-style: italic;
+  padding-left: 150px;
+}
+
+input[type="text"].state::-webkit-input-placeholder {
+  font-size: 11px;
+  padding-left: 1px;
+  font-style: none;
+}
+
+input[type=text]:focus, textarea:focus {
+  box-shadow: none;
+  border: 2px solid #344152;
+}
+
+
 a {
   text-decoration: none;
   color: white;
@@ -31,22 +48,6 @@ textarea, input {
   outline: none;
 }
 
-::-webkit-input-placeholder {
-  font-style: italic;
-  padding-left: 150px;
-}
-
-input[type="text"].state::-webkit-input-placeholder {
-  font-size: 11px;
-  padding-left: 1px;
-  font-style: none;
-}
-
-input[type=text]:focus, textarea:focus {
-  box-shadow: none;
-  border: 2px solid #344152;
-}
-
 .header {
   display: flex;
   flex-direction: column;
@@ -59,7 +60,7 @@ input[type=text]:focus, textarea:focus {
 
 .header p {
   font-size: 16px;
-  width: auto;
+  width: 50%;
   text-align: center;
   color: #7F7F7F;
   padding-bottom: 20px;
@@ -74,8 +75,8 @@ input[type=text]:focus, textarea:focus {
 .info legend {
   padding-top: 50px;
   padding-bottom: 40px;
-  font-weight: bold;
   padding-left: 7px;
+  font-weight: bold;
   color: black;
   width: auto;
 }
@@ -99,7 +100,7 @@ input[type=text]:focus, textarea:focus {
 
 .newsletter {
   margin-top: 50px;
-  border-top: 2px solid black;
+  border-top: 3px solid black;
   width: 60%;
   padding-top: 75px;
 }
@@ -142,19 +143,16 @@ input[type=text]:focus, textarea:focus {
 @media (min-width: 768px) {
   ::-webkit-input-placeholder {
     font-style: italic;
-    padding-left: 600px;
-  }
-  .info {
-    flex-direction: row;
-    flex-wrap: wrap;
+    padding-left: 280px;
   }
 
   .info label {
-    width: 30%;
-
+    display: inline-block;
+    width: 20%;
   }
 
   .info input {
-    width: 70%;
+    display: inline-block;
+    width: 50%;
   }
 }
