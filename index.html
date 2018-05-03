@@ -9,14 +9,14 @@
 
 <body>
     <div class="header">
-      <h1 span style="background-color: #344152; color: white; width: 100%;">THE CODE REVIEW</h1>
+      <h1>THE CODE REVIEW</h1>
       <h2>Signup for our newsletter</h2>
-      <p style="border-bottom: 3px solid black;">Get the latest news on how your code is doing right in your inbox.</p>
+      <p>Get the latest news on how your code is doing right in your inbox.</p>
     </div>
 
 
     <form action="/my-handling-form-page" method="post" class="info">
-      <fieldset>
+      <fieldset class="contact_info">
         <legend>Contact Information</legend>
 
     <label for="fullname">Full Name</label>
@@ -40,30 +40,24 @@
     <label for="zipcode">Zip Code</label>
     <input type="text" name="zipcode" id="zipcode" class="zip" />
   </fieldset>
-</form>
 
-<form class="newsletter">
-  <fieldset>
-  <legend class="news_legend">Newsletter</legend>
-  <p>Select which newsletters you would like to recieve.</p>
+  <fieldset class="newsletter">
+    <legend class="news_legend">Newsletter</legend>
+    <p>Select which newsletters you would like to recieve.</p>
 
   <input type="checkbox" id="html_news" value="newsletter_htmlnews" name="html_newsletter" class="html" for="html_news">HTML News</label><br>
-  <input type="checkbox" id="css_news" value="css_news" name="css_newsletter" class="css" for="css_news">CSS News</label><br>
-  <input type="checkbox" id="java_news" value="java_news" name="java_newsletter" class="java" for="java_news">Javascript News</label><br>
-    </fieldset>
+  <input type="checkbox" id="css_news" value="css_news" name="css_newsletter" class="css"<label for="css_news">CSS News</label><br>
+  <input type="checkbox" id="java_news" value="java_news" name="java_newsletter" class="java"<label for="java_news">Javascript News</label><br>
 
-<fieldset class="format">
-  <legend style="color: black; font-weight: bold; padding-top: 20px;">Newsletter format</legend>
+  <p style="padding-top: 30px; font-weight: bold; color: black;">Newsletter format</p>
     <input type="radio" id="HTML" value="HTML" name="newsletter_format" class="html_news"<label for="HTML">HTML</label><br>
-    <input type="radio" id="plaintext" value="plaintext" name="newsletter_format" class="plaintext"<label for="HTML">Plain text</label><br>
+    <input type="radio" id="plaintext" value="plaintext" name="newsletter_format" class="plaintext"<label for="plaintext">Plain text</label><br>
+
+    <p style="padding-top: 30px;">Other topics you'd like to hear about:</p>
+    <textarea id="bio" name="user_bio" class="text"></textarea>
+    <button id="signup" class="button"><a href="randomurl"</a>Sign Up</button>
+
       </fieldset>
-
-<fieldset class="area">
-  <legend>Other topics you'd like to hear about:</legend>
-  <textarea id="bio" name="user_bio" class="text"></textarea>
-  <button id="signup" class="button"><a href="randomurl">Sign Up</button>
-    </fieldset>
-
     </form>
-  </body
+  </body>
 </html>
