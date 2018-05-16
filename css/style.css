@@ -9,12 +9,13 @@ html, body {
   padding-left: 150px;
 }
 
+
 input[type="text"].state::-webkit-input-placeholder {
   font-size: 11px;
   padding-left: 1px;
 }
 
-input[type=text]:focus, textarea:focus {
+input[type="text"]:focus, textarea:focus, select:focus {
   box-shadow: none;
   border: 2px solid #344152;
 }
@@ -85,7 +86,7 @@ textarea, input {
   padding-top: 60px;
   padding-bottom: 80px;
   width: auto;
-  border-bottom: 3px solid black
+  border-bottom: 3px solid black;
 }
 
 .contact_info legend {
@@ -98,8 +99,8 @@ textarea, input {
 .email,
 .phone,
 .street,
-.city,
 .state,
+.city,
 .zip {
   background-color: #F5F5F5;
   border: none;
@@ -107,10 +108,17 @@ textarea, input {
   margin: 10px;
 }
 
+select {
+  width: 113%;
+  -webkit-appearance: none;
+  outline: none;
+}
+
 .newsletter {
   width: auto;
   padding-top: 20px;
   margin: 0 auto;
+  padding-bottom: 50px;
 }
 
 .newsletter legend {
@@ -127,7 +135,6 @@ textarea, input {
   color: black;
   font-weight: bold;
   padding-top: 30px;
-
 }
 
 .text,
@@ -138,10 +145,6 @@ textarea, input {
   margin-top: 40px;
 }
 
-.button {
-  width: auto;
-}
-
 .html,
 .css,
 .java,
@@ -150,11 +153,20 @@ textarea, input {
   margin-top: 20px;
 }
 
+.textarea {
+  width: 115%;
+}
+
+.textarea label {
+  margin-right: 10px; 
+}
+
 .text {
   background-color: #F5F5F5;
   border: none;
   padding: 40px;
   margin-top: 15px;
+  padding-top: 50px;
 }
 
 .button {
@@ -165,6 +177,7 @@ textarea, input {
   text-decoration: none;
   color: white;
   padding: 15px;
+  width: auto;
 }
 
 
@@ -190,6 +203,11 @@ textarea, input {
 
   .contact_info {
     margin-bottom: 50px;
+  }
+
+  select {
+    width: 55%;
+    -webkit-appearance: none;
   }
 
   .newsletter {

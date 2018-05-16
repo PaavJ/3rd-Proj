@@ -35,7 +35,12 @@
     <input type="text" name="city" id="city" class="city" />
 
     <label for="state">State</label>
-    <input type="text" name="state" id="state" placeholder="Choose State" class="state" />
+    <select type="select" id="state" name="state" class="state" />
+      <option value=""></option>
+      <option value="Second state">Alaska</option>
+      <option value="Third state">Alabama</option>
+      <option value="Fourth State">California</option>
+    </select>
 
     <label for="zipcode">Zip Code</label>
     <input type="text" name="zipcode" id="zipcode" class="zip" />
@@ -52,8 +57,10 @@
   <p style="padding-top: 30px; font-weight: bold; color: black;">Newsletter format</p>
     <input type="radio" id="HTML" value="HTML" name="newsletter_format" class="html_news"><label for="HTML">HTML</label><br>
     <input type="radio" id="plaintext" value="plaintext" name="newsletter_format" class="plaintext"><label for="plaintext">Plain text</label><br>
+  </fieldset>
 
-    <p style="padding-top: 30px;">Other topics you'd like to hear about:</p>
+    <fieldset class="textarea">
+    <label for="user_bio">Other topics you'd like to hear about:</label>
     <textarea type="text" id="bio" name="user_bio" class="text"></textarea>
     <button type="submit" id="signup" class="button">Sign Up</button>
 
